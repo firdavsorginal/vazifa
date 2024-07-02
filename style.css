@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 10px;
+  margin: 20px;
+  transition-duration: 5s;
+  transition-property: all;
+  /* transition-delay: 2s; */
+  transition-timing-function: linear;
+  transition: 5s all linear;
+}
+
+.box:hover {
+  background-color: blue;
+  color: blue;
+  transform: translateX(1000px);
+}
+
+.box:active {
+  background-color: yellow;
+  font-size: 30px;
+  color: gray;
+}
+
+input:focus {
+  background-color: red;
+  padding: 10px 20px;
+  transition-duration: 1s;
+}
